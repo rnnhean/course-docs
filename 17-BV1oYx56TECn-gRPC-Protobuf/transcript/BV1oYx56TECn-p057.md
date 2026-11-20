@@ -1,0 +1,14 @@
+[00:00] all right so now that we are done with MongoDB cred operations let's start working on our GRPC project and the first thing that we need to do is create the project folder structure so let's start with the cmd folder
+[00:20] and inside the CMD folder this time I'm going to create GRPC API folder instead of instead of calling it just API and this time at the root of our project I'm going to create a new folder called cert
+[00:45] and we also need internals folder and internals is going to have a few subfolders first one is handlers another folder is interceptors so middlewares are called interceptors in gRPC so
+[01:14] we are going to call this interceptors and we have another folder inside internals which is models and actually we have all these folders inside the API folder so let me create the API folder
+[01:42] Great. And actually the models is outside API. So let me bring it back outside. Great. All right. So now we have internals, API, handlers, interceptors and models.
+[02:04] and now inside the API folder we also need repositories and inside the repositories folder I'm going to create MongoDB folder because this time we are using MongoDB not MySQL or any SQL database
+[02:30] Alright and this is again not inside API folder it's inside internals. Alright sorry about that. So we have internals API models and repositories and inside API we have handlers and interceptors and models is empty and repositories contains MongoDB folder.
+[02:59] now we need another folder which is called PKG and this is going to have another folder called utils and finally we also need a proto folder for our protocol buffer files and inside the proto folder we are going to need gen folder and we also need the validate folder
+[03:25] for placing the validate.protofile from protogenvalidate repository. Alright and now we have some things which are ready for us this time. So we have the students teachers and execs data that we entered into the database. We can use the same thing over here. So I'm going to copy the
+[03:51] students, teachers and execs data from our previous API.
+[04:07] Now we also have the certificates ready for us so let's paste them inside the third folder and let's also copy the .env file from our previous project. If we need to modify anything we will modify that as we go along in the project.
+[04:35] So copy that into the gRPC API folder. And inside this gRPC API folder, let's create another folder for the binaries that we are going to create after we finish the API. Now I created a mailhawk.txt file for just a few things related to mailhawk.
+[05:02] I'm going to paste them here as well. And I'm also going to create a new file, which is commands.txt. And I'm going to use this file to save the commands that I'm going to use throughout this course. And mostly it's going to be protocol buffer commands, but also the benchmarking commands related to, related to GHZ.
+[05:27] you

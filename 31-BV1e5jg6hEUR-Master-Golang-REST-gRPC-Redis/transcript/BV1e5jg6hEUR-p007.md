@@ -1,0 +1,33 @@
+[00:00] Hi, and welcome. Throughout developing the application specifically on this section, we want actually to make it easy to us to handle the requests. For this, we are actually going to use Swagger. If you go here, as you can see, this is how we want to deal with the application by test each endpoint using Swagger documentation.
+[00:26] but we didn't until now have this on our application but we want to start to edit very well first of all we want to create a folder we can just call it docs and we will leave it for now empty and then we can just come here we want actually to generate the documentation dynamically for this we can just say underscore
+[00:54] server slash docs and just leave this for now just go to this no we didn't need to do this i just leave it empty for now all right after that we can just come here down
+[01:23] and start to add the first documentation, you can just add title, you can just call it fiber, go lang, arrest, api, after that we want to define the version, just add version, on
+[01:51] 0.0 we can add description just say add description description yep and just say this is swagger docs for rest api going fiber all right
+[02:21] After the description, we can just add contact name, api no, we don't need to add all this. Or the alliances, we need of course to add the host name, because this is the place where we will have our
+[02:48] requests we just say add host will be localhost 5000 all right the payz URL where we will start add our endpoints it is actually just slash so payz path
+[03:17] just slash the schemes we didn't have HTTPS for now for that we can just say add schemes just HTTP all right after that we want to define the the document the
+[03:43] authorization which will be of course pair security definition api key up can just come here and say add security definitions api key pair OS
+[04:12] all right we want to define the place we can just say add and header very well and the add name it can call authorization or authentication name it as you wish after all we can add the description for that
+[04:41] so description type error follow it sorry follow it by a space and the token alright that's very good for that
+[05:06] right after that after we write down our documentation we can just go below this and let's just start by use course right let's just use course we can just came here and say app.use course.new
+[05:33] and we can just add course config and down here we can just store by allow credentials yep for now add true allow origins function we can just say func just add this one
+[06:03] origin string return pull just return true very well now we can just add comma here come down here add these end up or close braces here all right after that we need actually
+[06:27] to start set up routes and may do many things but before this or down this we want to say serve serve swagger documentation all right for that we can just say app.get we want to get everything swagger
+[06:56] slash dot all and then say swagger dot handler function I'm sorry it's called handler default okay this is look undefined
+[07:26] okay missing ongo.sum all right now just hit on save and take the app out if we run it and say go mod tidy hit enter we don't have this rerun it and set up the go some successfully all right it looked like that the error now disappeared
+[07:55] this let's just call it again swagger handler default all right now the error is disappeared now we still need to run this one because we didn't have a default model here this actually run it dynamically we can just come here and say can you swag we can just say swag in it
+[08:24] as you can see this generates auger docs all right if we go here you'll see that the docs and the error now disappeared very well now just run our application again by say go run min.go allow access
+[08:54] alright before we test this i wanted to know that if the previous command doesn't work with you you need to install this swag you can just say go and install github.com swaggo slash swag cmd swag at latest very well now i'm going to run the app one more time and you can find this by go to this URL
+[09:23] localhost.http the double slash localhost 5000 slash swagger slash index dot html all right as you can see this is what we have fiber go lang rest tpi all right the base url localhost 5000 and the schemes is htp very well we have the authorization for api key everything exactly like we need
+[09:52] and that's pretty it before we move on we want to make this a little bit we want to make it actually dynamic how we can do this because sometimes this make make make kind of a conflict between the old documentation and the new documentation for this we can just use make just create a new file call it make file
+[10:21] it should have the same name actually all right and now we just define the code that we want first to just define the phony you can just have two operations first let's just call it clear swag
+[10:48] clear-swog and the second we can call it swog init swog-init all right after that we want to clear the documentation directory for this we already called it clear-swog
+[11:14] and here we can just echo anything on the terminal we can just call it clearing docs directory alright and after that we can just now say del slash q
+[11:42] docks backslash asterisk which represent all where 2 bigger than all or exit to zero all right after that we just the swag in it
+[12:12] Swag-init and say that it need to clear-swag. All right, we can record anything just like we have here, just came down here. All right.
+[12:38] and we can call this GenerateSogul documentation or anything like that or generateSogulDocs and we can use the same
+[13:06] the same command that we already used just take this out for now here is the command swagger init ifng main.co all right we can just go down here just remove this one and paste that on here all right now let's save very well
+[13:32] I just try this you can just say make and pass this on swag init I just copy it paste it here hit enter as you can see this has been removed and regenerated by just one command instead of removed by yourself
+[14:01] Which is mean that every time we update this we can just come here go long mongo grpc or socket Tc all right and head save and We need to run the
+[14:26] of course we need to use air but while we are developing the application instead of free run the app each time I just first install this I can just say make so again it this created now let's just run the app alright hit allow access go now to the browser try to refresh this as you can see this has been updated
+[14:55] and everything nearly works fine. I believe that's all I want to do on this lecture. We can now move on to the next lecture.

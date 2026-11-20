@@ -1,0 +1,3 @@
+[00:00] Well, it was a lot to take in this section, but look at what we have accomplished. A fully functional CI CD pipeline. We did not only deploy our small application, but we have also learned about using different CLI tools, defining variables, working with secrets, manual approval steps, the difference between continuous delivery and continuous deployment, and much, much more. On top of this,
+[00:28] We have learned a few useful Linux commands and ways of creating a more complex script. So let's all take a break, let this information sink in and I'll see you in the next section.
+[00:41] you

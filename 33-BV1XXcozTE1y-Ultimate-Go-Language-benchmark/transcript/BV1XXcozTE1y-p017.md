@@ -1,0 +1,3 @@
+[00:00] Lesson three is all about data structures. This is where we're going to learn about arrays. We're going to learn about maps. We're going to learn about slices. The slices being goes most important data structure.
+[00:28] We're also going to take some time to learn about the hardware. We're going to learn about how hardware works and the mechanical sympathies that the hardware can give us as relates to these three data structures. So this is a chance where we're going to start really focusing around our data-oriented design ideals. We're going to be talking about data semantics a little bit more and we finally get to learn about the hardware.
+[00:54] Yeah.

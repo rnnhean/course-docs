@@ -1,0 +1,74 @@
+[00:00] hello and welcome on this lecture we will start working on manager file which will be actually responsible for all the operation related to real-time chat such as creating a connection they just get it one by one creating a connection remove the connection when our user disconnect updating the online friends list
+[00:29] depend on the new connected connections or unconnected user or removing the connection also sending and receiving messages also saving data to the database this will be later on but we can leave it empty for now anyway adjust the start jump directly to the creating the file
+[00:56] we can just name our file as we said manager. .go all right we can start by defining the package name which is realtime and first of all we can add some types like
+[01:25] the message type as well as the connection manager let's just store by the message we can just say that we have a type message which will be a struct which will have sender this will be a string json sender
+[01:55] okay we just duplicate this three times and here we need to add receiver I know that this is kind of typo but we just leave it with that name finally we can add the content
+[02:24] so each message will include the sender and the receiver and the content of that message all right or else we need to add we need to add the connection manager which will be also a struct
+[02:48] and first of all we need to add the connection cells so we need to say connections why do I have 3n here connection okay connections
+[03:13] and this one would be a map of string pointer of WebSockets.con right this is the first one which will hold the connection data
+[03:40] also we need to have a list of the online friends online friends which will be a map of string array of string let's just leave this empty finally we need to have a message a method actually
+[04:10] related to getUserFriends and here we can use a channel can just say user friends getUserFriends okay this would be a function where I see a string or return a chain
+[04:37] and finally we'll return array of string or struct of string or slice of strings all right finally we need to be able to lock and unlock for this we can use sync mutex so let's just say lock sync mutex all right
+[05:05] that's cool now we need to start by create a function for new connection manager to initialize to be able to initialize this connection manager let's just say funk now we can name it new connection manager
+[05:32] okay and this will expect the function of the same signature this getFriends function they just copy it and paste that here alright and this will return the connection manager
+[06:02] pointer of the connection manager okay after that we can check f get user friends not equal to no on that case we want to return pointer of the connection manager
+[06:27] and the connections will be we need to make sorry make yeah make yes exactly this is what we want to create a map string pointer of this connection this is the first thing after that the all line friends can be make a map string or a string yep
+[06:56] finally getUserFriends can be getUserFriends all right after all we can return null if of course this not null return null very well now we need to create the addConnection function
+[07:25] okay it's a little bit we can call it is complex but it is actually not anyway let me just see how this should work just say func receiver cm or connector manager connector manager pointer of this connecting manager and the function name is add
+[07:55] connection here we need to have user ID which the type of is string and the connection itself so con will be pointer of web socket connection all right first of all we want to look this cm
+[08:24] or connection manager lock lock after that we want after all to unlock it actually so we can just say defer cm lock unlock now we want to point this user ID to our connections
+[08:53] by that way we can just say cm what I mean is that we can say cm connections specifically the key would be the user ID value would be equals to this connection so we can get the user ID from the connection or get the connection from or using the user ID
+[09:22] now we want to set the online friends related to this user id we can just now pass an empty slice of string now after we adding our new connection or our new user we want to notify the existing user about the new online friend but note that
+[09:51] we are looking only for his friends okay we can just add a comment here notify existing users about the new online friend okay we just have kind of loop we can just say for friend ID
+[10:20] and here we can make range on cm online friends and here we can check f the friend id is not equal to the user's id
+[10:50] and the cm dot is friend we need to create this function is friend on that case we want to say user ID friend ID what I want to do here we want actually to notify the user about this okay
+[11:19] So this is mean that we need actually to create this helper function. We'll just go up and create it Say helper func is friend Okay, we just created say function So we CM pointer of ConnectionManager And after that check if this is friend
+[11:48] so this is the function name we'll expect the user id and friend id both of them string return just pull in tells us if this friends or not so we can just say sorry friends all goes to a change
+[12:17] of the cm.getUserFriends pass to herUserId after that check f friends is equal equal to new on that keys we can just say we can look anything here but simply we can directly return
+[12:46] false okay what if this true on that case we want to make a range of this on these friends and check if that friend is actually one of one of them so we can just say four I didn't care about first one meter second one f or friend equal range
+[13:15] on this friends so here simply where the turn falls if the user simply doesn't have any friends otherwise we want to make a loop through this so I just came up here and say friends and note where this come from you just click on it actually this will come from this one
+[13:44] user friends at the end okay now here we can say f this f or friend is equal equal to friend ID on that case only we need to return true okay
+[14:13] after all we can return false very well now let's just go back here on add connections after we check this as friend after that we can just say cm dot online friends friend ID is equal to we want to append
+[14:42] exactly this cm online friends friend ID to our user ID after that we can just say error cm.connections of this friend ID
+[15:10] sorry this cm connection manager friend ID okay all I want to do here we want to create to update the interface meaning we want now to notify our friends about us by this way we can just use the cm
+[15:38] by say write json and here we need to say map the type of B string here we didn't need to define any kind of type so we can directly use interface
+[16:06] what exactly we want to do we want to say online friends is cm sorry cm not online friends friend ID
+[16:29] okay this is how we will update our first user on the loop since that this is a loop this will range through all our users okay after all we can just check f and there is this error not equal to 0 on that case we can just say log.printf
+[16:58] what we want to say for example error notifying here we can ask difference id about the dollar sign s sorry it should be dollar sign s
+[17:23] about this one which will be the user's id after all we can pass this error so add or assign v we just pass them friend id user id and finally the error itself after all we can simply return
+[17:53] okay now actually we need to update the online friends list for the new user so outside this part this loop we need here to update the online friends list for the new
+[18:22] User user here meaning the new connection Okay Know that we are actually tell now we didn't really use this directly this get user friends directly. Why is that? Because we are simply will not use it from here. We will use it from here Whenever we start call this add new connection, we will use
+[18:51] start use it here actually anyway, let's keep work on that where we stop then on updating the online friends list for the users, we can use go routine, we can just say go fang ok, what we want to do over there, just here first add this to call our function
+[19:18] we can make a loop and loop through this connection manager, get user friends, store user ID and nearly do the same operation I just came up here but this time would be for our user ID this related to friend ID, our user friend ID because when our user start
+[19:44] Make a connection we want to start firstly by update the other and the his friends ID Which what we do with here and next we want to give him a list of his online friends and That exactly all doing right now. We can just start by say four friends
+[20:13] range on cm get user friends user ID check f friends in ur sorry equal to 0 on that case we want simply to continue that's spread yet
+[20:41] so what if not on that case we want to make another loop actually four on to ignore the first one after that the friends ID which will come from a range on these friends if
+[21:11] here we want to check if the connection is not nil so we can just say fcm connections of this friend ID is not equal to nil in the case we can just say cm it is nearly the same thing that we did cm dot all line friends
+[21:39] user ID equal to append and here we want to append different ID we want to do the same that we did on this port so we can simply copy all this directly based on here I want to format this a little bit okay that's great
+[22:06] here we want to do all this except that we will change this to user ID all right we want to replace this user ID here friend ID it is nearly the same thing that we did here but this time is reversed very well we're done with that function
+[22:34] now we need to create another two functions one for removing the connection and the last one for sending our receiving or sending a message to a receiver all right let's just start by removing the connection I just say func and cm receiver of cm
+[23:02] connection monitor we can name this remove connection we want just to have user ID okay which will be a string first of all say cm lock dot lock
+[23:31] after all the fear cm lock unlock all right we can simply use delete message so I can just say delete cm.connections user ID delete also
+[23:59] connection module or cm online friends for this user ID but note something very important that whenever we did this this is mean that we want to update the online friends for the our user online friends lists meaning if one user user number one
+[24:23] and now we remove a connection related to it we want to update his friends that his now is not on him on them online friends list or online friends list yep okay since that he's now will be offline so we want to update the online friends list for all the other users related or friends for our user and on the same time they are online
+[24:49] for that we can just make a loop on friend.id we want to make a range on cm.online friends for i and id we want to make another range
+[25:18] on this cm online friends friend ID after that check if ID is equal equal to this user ID on that case we can just say cm online friends friend ID if that equal so we can now abandon this
+[25:46] slice of online friends here we can use dynamic programming for this yes but not exactly like this online friends we want to be more specific we want to come up here and that's why we define this eye and say the slice from the index till this eye
+[26:15] until this specific index okay we want also to say cm dot all line friends exactly double three dots but here we want to say friends ID or friend ID sorry from this I plus one
+[26:43] to the rest of the slice okay now what we are actually ready to audit the online friend which will be for our user friend so we can directly use this one so I can copy this one from here pasty tears
+[27:09] format the document a little bit why this doesn't work sorry adjust to remove it where not exactly copy this from here
+[27:37] paste it here right just check up this now we want to say online connection friends json write this one online friends dot friend id
+[28:06] after all yeah this is exactly what we want to do but we didn't want to return here on this case if this equal one we want simply to break okay that's right yet finally we can add
+[28:34] send message to receiver not just a phone CM pointer of this connection sorry connection manager send to receiver simply will be a message of type of this message the type that we already
+[29:03] and create it at the beginning also we'll start by say cm.loc.loc defer cm.loc unlock after that we want to check if the connection is on
+[29:28] so i can just check if cm.connections for this msg receiver is okay okay on that case we want to say error equal to con.write.json
+[29:57] and simply pass this message to it if we got any error if the error not equal to 0 on that case we can simply log this log printf can say error sending message to
+[30:24] %s %v this is a small not-capital case here we are talking about the MSG receiver and here we need to print the error after all
+[30:52] we can here actually have to do just say to do save message to db via grpc okay as we want to do i think nothing just we need to check
+[31:18] if I add else case I can log printf the receiver present s not found
+[31:44] and here mhg receiver great and that's pretty it remember what we did one by one we stored by defining the types for message connections this is how our connection manager will have we'll have the connections online friends related to all to each one of our friends
+[32:10] getFriends will give us the user friends here we start adding a connection update the notify the existing user friends about the newcomer and then update his online friends list here on this part here we remove when we remove the connections we used here dynamic programming to be able to easily update our online friends lists
+[32:39] after we disconnect or somehow something the connection is interrupting meaning that we are now offline alright and finally here we have sent a message to receiver and this is the helpful function that will help us to check if whether of this user is friend or not we're all
+[33:06] I think that's all what we need to do in this lecture on the next lecture we can just now start use our manager and friends get friends helper function or dummy or mocking function and that's will nearly be at till we use the GRPC via or with
+[33:31] our API to be able to get the real user friends and save the message to DB. So I think that's all I needed on this lecture. Let's just move on to the next lecture.
+[33:47] Thank you.

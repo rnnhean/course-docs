@@ -1,0 +1,14 @@
+{
+  "name": "agent-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "按课程 AI Agent Engineer (BV1kDxh6fEgp) 落地的 harness 工程：box / skill / hook / MCP server / 测试门",
+  "scripts": {
+    "test": "node --test test/",
+    "mcp": "node mcp-server/stdio.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

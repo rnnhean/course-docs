@@ -1,0 +1,5 @@
+[00:00] and search for fire wall okay and just open it in our new tabs okay and basically you will create a firewall rule okay you will create a firewall rule here I have already created for the previous projects that's why it's already done okay now you can see first of all you can give any name okay just give any name here
+[00:29] okay now keep the network to default okay direction should be ingress action should be allow action should be allow action on match should be allow and your specified targets will be all instances in the network okay all instances in the network your source filter will be ip4 ranges source filter will be ip4 ranges
+[00:57] and your source IP will be like this you have to write this just copy this and paste it inside here IP for ranges what's happening is
+[01:23] Why I'm not able to click it? Why it's happening like this? Okay, you have to write it like this, okay? Source IP4 ranges, you have to write 0.0.0 slash 0. And you have to allow all the ports, okay? And then you have to create this rule, okay? As soon as you create this rule,
+[01:51] Thank you.

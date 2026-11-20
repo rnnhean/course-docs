@@ -1,0 +1,3 @@
+[00:00] All right, you're ready for another assignment. This time you're going to be importing the remaining data for the 2012 calendar year. Sally's come to you with two data sets. One representing the order items from May through December. Another representing the order item refunds from May through December. You've already created these tables. You're familiar with uploading the data. This assignment should just reinforce those concepts, which we'll be using again throughout the course.
+[00:28] I'd recommend you go ahead and start with the order items data, get that imported, take a look and see if everything looks good to you, then import the order item refunds data. Give this a shot on your own, then come back and watch the solution video. Good luck!
+[00:45] you

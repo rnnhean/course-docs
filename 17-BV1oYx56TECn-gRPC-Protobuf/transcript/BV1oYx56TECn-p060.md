@@ -1,0 +1,6 @@
+[00:00] Now before we go forward with our API, we need to import the dependencies that we know that we are going to use in our API. And because we are creating another version of an existing API, this puts us in a very good position where we know what we are going to need in our project. So apart from the packages which are similar to the REST API implementation,
+[00:26] there are some new things that we are going to be importing. This time we are using MongoDB instead of an SQL database like MariaDB. So we will need to install packages related to MongoDB. So now if we open Go Packages web page and search for MongoDB, the first result which is quite popular is the one that we are also going to use in our API.
+[00:55] And if you go to the GitHub repository of this package, you see that this is the official Golang driver for MongoDB. So this is reliable and also widely used. So let's copy this and import that into our project.
+[01:21] And apart from MongoDB we know that we are also going to use emailing. So we last time used the go mail package. So let's import that as well.
+[01:46] And apart from GoMail, we also used JWT package for generating JWT tokens. So let's import that too.
+[02:00] you

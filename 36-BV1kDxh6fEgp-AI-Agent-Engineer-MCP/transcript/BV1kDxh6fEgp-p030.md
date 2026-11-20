@@ -1,0 +1,4 @@
+[00:00] In this module, you cut down what you have to read. You grill the plan before any code exists, so the agent builds the right thing, and you end with acceptance criteria. A fresh, skeptical reviewer checks the change against those criteria, and every finding says if it's proved or reasoned. The PR tour shows you the intent first, the ask why files, and the few lines worth reading.
+[00:28] And when you have many pull requests, PR triage tells you which one to open first. Here are this module's tasks in one list. Let your agent grill you on a new feature, a ticket transfer to a friend. Review the ticket transfer change with the adversarial tester skill. Run the PR tour on the same change. Each task, with its commands and its done when, is on its lesson page.
+[00:58] In the next module, I will teach you how to give all your agents one shared memory.
+[01:04] you

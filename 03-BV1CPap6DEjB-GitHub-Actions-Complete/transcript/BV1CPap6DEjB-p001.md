@@ -1,0 +1,4 @@
+[00:00] Hello, everyone. Welcome to this course. My name is Sheikh Mohammed Ghaz and I will be your instructor. Before we start, I just want to tell you one thing about how I created this course. My goal is to keep things simple and practical. And I know sometimes technical concept can feel difficult when we learn as a newbie. So whatever we learn in this course, I will try to explain the concept as
+[00:29] why we need it, how it works and then show it practically. So we will start from the basics and slowly move into the practical concepts and also recommend you to practice along with me. Don't just watch the videos, try the workflows yourself, make some mistakes and understand why something is working or failing. By end of this course, I want you to feel comfortable creating GitHub Actions workflows on your own.
+[00:57] and using them in your real project. So that's it. I hope you to enjoy this course and let's get started.
+[01:07] Thank you.

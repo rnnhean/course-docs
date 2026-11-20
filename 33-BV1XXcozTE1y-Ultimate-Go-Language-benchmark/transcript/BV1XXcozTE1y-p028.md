@@ -1,0 +1,3 @@
+[00:00] Lesson four begins our journey around how to decouple our code from change. And the change that we're talking about are the data changes. There's lots of mechanics.
+[00:28] around this and this is where we're going to take the time to start learning those decoupling mechanics. We're also going to be focusing a lot on the semantics or the behavior around decoupling. We're going to talk about a lot of guidelines and a lot of philosophies around precision and discovery and a bunch of things that are going to really help you understand how to use interfaces and the cost behind them.
+[00:52] Yeah.

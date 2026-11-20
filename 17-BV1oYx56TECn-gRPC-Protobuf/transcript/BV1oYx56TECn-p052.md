@@ -1,0 +1,3 @@
+[00:00] Wonderful. Now that you have practiced enough with GRPC in a training environment, let's begin making our main API for the school project. Now we already have the API planning ready. And most importantly, we have the API ready, the rest version of the API. So all we need to do is just make the GRPC version of that and we're done, right? Well,
+[00:27] Let's not keep it that simple and do something more. We used SQL in our REST version of this API. So now in the GRPC version of the API, let's use MongoDB and let's see how that is different from using SQL. MongoDB is no SQL. So how is the GRPC API going to turn out using MongoDB? Let's find out.
+[00:53] you

@@ -1,0 +1,4 @@
+[00:00] Now, because this is a GRPC API, there are no query parameters, there are no path parameters that we need to use HPP or if we need to use sanitize. And we also don't need to create a compression middleware because there is an inbuilt functionality of GRPC which we can enable to use compression. And I've already showed that to you. We don't also have HTTP headers to use in GRPC API and we also don't need to use cores.
+[00:28] However, you can use a unique metadata string that you can identify with the client, but usually gRPC does not involve cores. gRPC shares its protocol buffer file with an exclusive client and then interacts with that client. Currently, gRPC lacks the functionality to interact with browsers and that's why we don't use HTTP headers or cores.
+[00:55] So this is one of the many advantages of using GRPC.
+[00:59] you

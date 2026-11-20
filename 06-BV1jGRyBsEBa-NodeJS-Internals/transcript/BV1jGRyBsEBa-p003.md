@@ -1,0 +1,3 @@
+[00:00] This particular section will have all the resources, the source code, the PowerPoint slides, the Google slides really, not really PowerPoint, but I'm gonna give you all the different formats for the slides. And I'm also gonna give you all the references that I used as materials for you, papers that I've read, articles that I've read about this, not just that used as reference.
+[00:29] and I'm gonna be all available in this particular section so you go to the download section of this lecture and you're gonna find everything here. If you don't find something, let me know and I'll just upload it to this particular section. How about we get started for this course?
+[00:48] Let's get started.

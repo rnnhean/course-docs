@@ -1,0 +1,4 @@
+[00:00] It is time for another assignment because I want to put you in the driver seat. Your job is to securely store this access key composed by the access key ID and the secret access key in GitLab. So keyword, I want you to securely store this information in GitLab. To know what you need to do, you need to spend
+[00:26] just a bit of time going over the official AWS CLI reference and figure out which environment variables you need to define so that AWS CLI can find the access key ID and the secret access key. If AWS CLI manages to find this, then you should also get rid of the unable to locate credentials error and actually instead what you should see in the logs
+[00:55] is the fact that S3LS will print a list of buckets from your account and you should see the Learn GitLab bucket. The following quiz will take you through this assignment step by step.
+[01:10] you

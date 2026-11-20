@@ -1,0 +1,3 @@
+[00:00] In Lesson 14, we really open up the covers to everything that we've been talking about and we go really deep into the profiling and tracing tooling that Go provides.
+[00:29] I'm going to show you how to leverage micro level profiles by using benchmarks. I'm going to show you how to take a web service and get those macro level profiles as well on running software. I'm also going to show you how to see things that are not happening using the tracing tool. And this is again that last opportunity where we can take everything that we've learned and kind of see it come to life in our computer as we begin to learn how to profile and trace the code.
+[00:58] that we have working.

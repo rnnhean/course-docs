@@ -1,0 +1,3 @@
+[00:00] Hello everyone. Welcome to the session. In this session, we will discuss about artifact retention policy. Here, retention simply means how long GitHub keeps our upload artifacts. Once the retention period is completed, GitHub removes the artifact. By default, GitHub keeps our upload artifact for 90 days. We can also set a retention period while uploading the artifact.
+[00:29] For that, we use retention days. So, we use retention days under the upload artifact action. Here, I have given retention days as a 7. So, our test report artifact will kept for 7 days. After retention period, GitHub will remove the artifacts automatically. So, that's all for this session. We'll meet in the next session.
+[00:55] Thank you.

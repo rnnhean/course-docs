@@ -1,0 +1,2 @@
+[00:00] And here we mark the end to the journey with Docker. We literally have covered everything from the basics to the advanced. We literally have the hands-on now. We have that confidence. Then we can literally containerize any application. Thank you very much for purchasing this course and I wish you all the very best in your future. So until the next time I will see you. Thank you very much once again and congratulations on completing the course.
+[00:21] Thank you.

@@ -1,0 +1,2 @@
+[00:00] New tools, skills and agents come out every day. So when a new tool comes out, build something real with it on a real repo instead of only reading about it. And to understand the new tool, find the layer it changes. The model, the prompt, the context, the harness, memory, the loop or the boundary. Thank you for learning with me. I hope you enjoyed the course. Take care and see you next time.
+[00:28] you

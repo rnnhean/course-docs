@@ -1,0 +1,4 @@
+[00:00] Welcome back in this section. We are going to set up helm learning environment So as part of that we are going to sign up to Docker Hub and also install the Docker desktop on our local desktop and also install the helm CLI So let's see the order in which we are going to execute this section So we'll start with signing up to the Docker Hub and after that we'll download and install the
+[00:29] Docker desktop and from there we will move on to enabling the Kubernetes cluster in Docker desktop and after that we will go ahead and then deploy a simple Kubernetes service and deployment manifest and test the Kubernetes cluster whatever we have enabled in Docker desktop is working as expected or not. So after that finally we will go ahead and then install the
+[00:57] Helm CLI on our local desktop. So I will see you in the next lecture. Until then, bye-bye. Thank you.
+[01:04] you

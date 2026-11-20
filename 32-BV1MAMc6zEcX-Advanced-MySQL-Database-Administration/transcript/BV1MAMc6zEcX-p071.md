@@ -1,0 +1,3 @@
+[00:00] All right, we're ready for your assignment on importing page view data. So Molly's come to you and she has this detailed February page view data that she's pulled out of the web analytics tool. She'd like you to load that into the central database so that we can tie it to all of the other great data you've put together. So take a look at the attachment that Molly sent. You'll want to look at the page view data structure, then create a website page use table that matches that structure.
+[00:28] And then you can go ahead and upload that data set. Give it a shot, come back and watch the solution video, and we'll talk through the results. Good luck.
+[00:37] you

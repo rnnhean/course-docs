@@ -1,0 +1,16 @@
+[00:00] All right, all right, all right, welcome back everybody. Now previously we talked about future and callables. So that means you're ready to talk about atomic variables and how they help us perform thread safe, lock free operations on individual variables. We're gonna focus on atomic integer. And this allows us to safely increment or update an integer value in a multi-threaded environment.
+[00:27] without using synchronization or locks. So then I'm going to want to create a new project named Atomic Variables in IntelliJ.
+[00:47] So we start by creating an instance of atomic integer. And this class provides methods to atomically update the integer, meaning that multiple threads
+[01:15] can safely modify it without causing any issues, like race conditions. So it's actually a class that provides atomic thread safe operations on an integer. And it means that multiple threads can increment, decrement, or update the value without needing locks or synchronized blocks. So we'll initialize the counter to zero. And this value will be shared across all threads.
+[01:42] Next, we create a fixed thread pool with three threads using executors. New fixed thread pool, put three. So this is going to manage a concurrent execution of multiple tasks, each incrementing the atomic integer. Now we submit five tasks to the thread pool.
+[02:12] Each task will increment the counter using the increment and get method from atomic integer, which...
+[02:25] Atomically increments the value and returns the updated value.
+[02:49] The Increment and Get method atomically increments the counter by one and returns the updated value.
+[03:18] Because it's atomic no two threads can access the counter at the same time so there's no risk of a race condition.
+[03:36] And then after all the tasks have been submitted, we'll need to shut down the executor service to ensure no new tasks are accepted. And then we'll wait for the submitted tasks to finish using
+[04:01] a wait termination. Shutdown stops the thread pool from accepting new tasks. However, already submitted tasks will still run. We'll use a wait termination to wait up to 10 seconds for all tasks to complete.
+[04:26] This ensures that the main thread won't exit before the tasks are finished. And then once all the tasks are complete, we'll print the final value to the counter. This shows us how many times the atomic integer was incremented. And since we submitted five tasks,
+[04:55] The final value should be 5. The GET method simply returns the current value of the counter. Now, why are we using atomic variables in the first place? For thread safety without synchronization. So like atomic variables, like
+[05:25] atomic integer, make it easier to perform thread safe operations on single variables that any need for synchronization blocks or locks, which, well, believe me, they can be more error prone and lead to issues like deadlocks. We've also been talking about better performance as well. Since atomic variables use low level CPU operations like compare and swap, they're much more efficient than using locks.
+[05:54] This is especially useful in high concurrency environments where many threads are updating shared data. So when we come back in the next video, we're going to talk about thread coordination.
+[06:06] you

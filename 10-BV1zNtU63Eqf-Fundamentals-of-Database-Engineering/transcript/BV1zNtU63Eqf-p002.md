@@ -1,0 +1,3 @@
+[00:00] Hey guys, quick update to my introduction to database engineer course. I have added a ton of new content to this course. I have added a new section explicitly discussing database replication. I have added new and advanced indexing techniques column indexing key versus non key indexing. And finally I added a whole new set of around an hour worth of database
+[00:29] with practice. All of these have actual examples using Postgres. Enjoy!
+[00:37] Thank you.

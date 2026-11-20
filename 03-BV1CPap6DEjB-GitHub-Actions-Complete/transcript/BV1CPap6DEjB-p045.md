@@ -1,0 +1,22 @@
+[00:00] Hello, everyone. Welcome to the session. In the session, we will discuss about the practical implementation of configuration variable. Before starting, let's recall what is meant by configuration variable. Here, configuration variables are used to store nonsensitive configuration values in GitHub. So we can reuse those value in our workflows instead of
+[00:29] hard coding them in the YAML file. For this practical implementation, I have created empty GitHub repository. Name it as configuration variable. And this has been cloned into my local system with the Git commands. And we are going to use Visual Studio Code for code editing. Now, let's start the implementation. Let's create the director structure for the workflow. I mean, let's create the .github and
+[00:58] workflow directory. Inside the workflow directory, let's create the yaml file. I will name it as configuration variable dot yaml.
+[01:28] Let's add the ML configuration into the configuration variable.yml. Let's name the workflow as configuration variable practical. And let's add the on keyword with the event called push. Name configuration.
+[01:58] variable practical with the on keyword into push branches main now let's add the job section job name would be demo and this will schedule on
+[02:25] Ubuntu GitHub Hosted Runner.
+[02:54] Before heading to the step section, let's create the configuration variable on GitHub UI. Let's head to the GitHub UI and click on this settings tab. Let's head to the secrets and variables. Click on actions. We'll see variables over here. Let's click on
+[03:24] new repository variables. Here we need to add the variable name and the value of variable. Here the name is app underscore name and the value is my app. Let's add this variable.
+[03:53] And the variable is available over here. Now, let's add another configuration variable. Let's click on new repository variable. And the name is node ENV. And the value is production.
+[04:19] Let's add this variable. So now these values are stored in GitHub repository settings. And this can used in workflow level. Now let's set to the workflows. Let's add the substitution. The first step name is
+[04:47] show application name and let's use run keyword to execute shell it will echo application name is here we need to specify
+[05:15] the configuration variable with the dollar, with the braces, vats.app and the square name. This is the first step and let's add the another step.
+[05:41] show environment name run echo environment name is
+[06:06] so here we have successfully add the workflows configuration and here the configuration calls the workflows the configuration variables calls in a workflow via vats
+[06:35] with the variable name. Now let's commit and push the changes from local system to remote repository. Let's use git add dot git commit iphone m added the configuration variable.
+[07:04] Now let's push with the git push. We are pushing our changes from local system to remote repository. Now let's head to the GitHub repository and refresh this page, verify the changes. As you can see, changes has been arrived.
+[07:32] Now let's head to the actions tab. Now let's open this workflow run. As you can see, the demo job runs successfully. Let's open this job and let's expand these steps, show application name and show environment name. As you can see,
+[08:00] The configuration variable is accessed by the step and its values displays in a workflow log. First step displays my app which we have used over here and configured into the configuration variable and it print the same value and it is similar to the second step which is show environment name which is production. So here
+[08:27] We did not hard-coded the values directly into the yaml file. Instead, we configure the value in the GitHub settings and access it inside the workflow using was.context, which is was.the variable. So if we want to change these values in the future, we can simply update the values over here into the action secrets for the specific
+[08:57] configuration variable by clicking on this one. So in future, we can simply update the values by heading to these GitHub settings without changing the workflow files or hard coding the values in workflow YAML file. So this is one of the main advantage using configuration variable in a workflow.
+[09:26] That's all for this session. We will meet in the next session. Thank you.
+[09:30] Thank you.

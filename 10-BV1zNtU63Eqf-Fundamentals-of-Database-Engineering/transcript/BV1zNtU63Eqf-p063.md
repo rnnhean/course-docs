@@ -1,0 +1,3 @@
+[00:00] Summary! What do we discuss? We discuss sharding. We discuss sharding. This is a meaning of sharding. Spread your tables into multiple database instances. We discuss consistent hashing. Consistently hash data into multiple entries. We discuss horizontal partitioning versus sharding. That's the difference between the little bit. We talked about the advantages and disadvantages.
+[00:24] we went through code guys it was long code right and the code is available there so we essentially wrote a URL shortener kind of a thing that shortens URL and expands those URLs right and then finally we talked about pros and cons hope you enjoyed this video
+[00:42] I'm gonna see you in the next one guys, you guys stay awesome!

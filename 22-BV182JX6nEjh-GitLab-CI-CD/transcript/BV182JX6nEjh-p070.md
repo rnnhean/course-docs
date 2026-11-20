@@ -1,0 +1,4 @@
+[00:00] Are you up for a small challenge? These end-to-end tests that we have here are generating a JUnit report, but I'm not sure where it is saved and how it is called. Can you help me and then publish this report as a JUnit artifact? In case you're wondering about this assignment, the thing is, sometimes it is just part of the job to do detective work and figure things out on our own.
+[00:27] without having much information about some technical details. Nobody said DevOps is easy. However, if you do this assignment properly, what you should notice is as part of the merge request, this test summary. And if you go ahead and collapse it, you're going to see here the end to end reports. And of course, you go here over the full report, we'll be able to see again, the end to end test, the exact same end to end tests that are visible in this file.
+[00:54] The following quiz will take you through this assignment step by step.
+[01:00] you

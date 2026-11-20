@@ -1,0 +1,15 @@
+{
+  "name": "agent-box",
+  "build": {
+    "dockerfile": "../box/Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.claude-second-brain,target=/second-brain,type=bind,readonly"
+  ],
+  "runArgs": ["--cap-add=NET_ADMIN"],
+  "remoteUser": "node",
+  "postCreateCommand": "npm install"
+}

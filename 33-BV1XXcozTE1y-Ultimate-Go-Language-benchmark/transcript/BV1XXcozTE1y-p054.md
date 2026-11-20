@@ -1,0 +1,4 @@
+[00:00] Lesson eight is the beginning of our journey into multi-threaded software. In this lesson, we're going to learn about how the operating system schedulers work.
+[00:28] and not at an implementation detail, but at a level of behavior that's going to help us be a better go developer. So we're going to focus on some of those operating systems semantics on the scheduler. Then we're going to learn the go scheduler semantics. So again, when we're writing code, we can be very sympathetic with these schedulers. And then finally, I'm going to share with you how to create go routines and how to do a little bit of orchestration with waycrups. So this is going to be our real base.
+[00:57] fundamental knowledge that's going to prepare us for learning how to be a multi-threaded software developer in Go.
+[01:04] you

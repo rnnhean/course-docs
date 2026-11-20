@@ -1,0 +1,3 @@
+[00:00] All right. You're ready for your next assignment, which is going to be importing 2013 Q1 data. Sally's coming to you with two files representing the order items and the order item refunds for the first three months of 2013. And she wants you to get those loaded into the database. This one shouldn't be too challenging for you. You've done this a few times before. It should just reinforce the concept. Take a look at the record counts here.
+[00:27] which will help you figure out if you've done it correctly. Give this a shot on your own, then come back and you can watch the solution video and I'll walk you through. Good luck!
+[00:37] you

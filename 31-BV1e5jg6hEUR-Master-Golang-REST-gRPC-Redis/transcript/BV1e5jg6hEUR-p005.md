@@ -1,0 +1,13 @@
+[00:00] Hi and welcome on this lecture we will start install some necessary packages that we will install it throughout the course as a matter of fact we can just Start use that packages and head go more tidy and this will be installed by default But let's just install it for saving the time from now All right, we need actually to have fiber middleware course That we will use it throughout the course here specifically here
+[00:29] to allow the requests also we want to install gofiber swagger you just install it as well go get and gethub.com gofiber swagger alright let's just hit enter alright it is installed already here anyway also we want to have the MongoDB driver
+[00:59] and MongoDB options I'm not sure that we need to install both of them I just store by say github slash it is not from github this time it is actually from go.mongo db.org slash mongo hyphen driver slash yeah
+[01:27] just like that driver it is called go mongo db.org slash mongo driver slash mongo all right hit enter wait until this downloading right everything here is installed or else don't need
+[01:56] Do I have something that is not right? I believe this is width go mod here but this would be fixed I believe yes where is that? Add this as cos we need to write down this just leave it for now, right?
+[02:22] I believe that we need to install this on as it asks, we just copy this on. Go back, start install it. Wait until the installation is finished. Alright, we're cool now. What else? We need to install MongoOptions. Yes. After that, MongoDriver slash options.
+[02:48] hit enter wait until the installation is finished all right but does not contain package okay this is inside the same package so we didn't need to install it or else we need I believe Mongo driver has also paste on and I just test it anyway slash
+[03:16] paste on yes okay all right or else don't need don't need actually to have jwt go and I prefer this one just say go get github slash
+[03:43] D, G, R, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I, J, L, V, I,
+[04:13] okay this has been added successfully or else you don't need we need to go playground for addition okay here say go get go to hub.com slash go hyphen playground
+[04:39] I just hit enter wait until this installed for all this has been installed successfully I think that's got for enough for now we can install the rest of the packages if we needed
+[05:07] what the other lecture so see you on the next lecture
+[05:12] Thank you.

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# P11 边界盒子——启动脚本
+#
+# 课程里的用法就一句：
+#   "./box bash ... it opens a shell inside the container, separate from the rest of my computer." —— p011 [02:52]
+#
+# 挂载规则同样来自课程：
+#   "Your project folder is mounted inside plus one read-only folder with the settings for your second brain"
+set -euo pipefail
+
+# Windows(Git Bash) 下别让 MSYS 把 /workspace 转成 C:/Program Files/Git/workspace
+export MSYS_NO_PATHCONV=1
+export MSYS2_ARG_CONV_EXCL='*'
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+IMAGE="agent-box:latest"
+BRAIN="${SECOND_BRAIN_DIR:-$HOME/.claude-second-brain}"
+mkdir -p "$BRAIN"
+
+if ! docker image inspect "$IMAGE" >/dev/null 2>&1; then
+    echo "[box] 首次构建镜像 $IMAGE"
+    docker build -t "$IMAGE" -f "$ROOT/box/Dockerfile" "$ROOT"
+fi
+
+exec docker run --rm -it \
+    --cap-add=NET_ADMIN \
+    -v "$ROOT:/workspace" \
+    -v "$BRAIN:/second-brain:ro" \
+    -w /workspace \
+    -u root \
+    "$IMAGE" "$@"

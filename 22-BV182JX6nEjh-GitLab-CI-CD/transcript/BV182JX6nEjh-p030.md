@@ -1,0 +1,3 @@
+[00:00] Our goal is to avoid manual work. So we will replace the need to inspect the logs and look for the build directory which are the artifacts for this project with a simple script that does this for us. So you need to create a new job that involves testing this artifact. The artifact is located in the build directory and inside the build directory if we're using the artifacts to navigate
+[00:29] we're gonna see this index.html file and we just want to check if that index.html file is present and this is a test that you need to write. At the end of the assignment your pipeline should look like this. The following quiz will take you through this assignment step by step so make sure to follow it.
+[00:50] you
