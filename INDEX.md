@@ -46,3 +46,4 @@
 | 40 | [Software Factories for Real Engineers part1](./40-BV1dJsF6dEeR-Software-Factories-for-Real-Engineers-part1/) | 100 | 15 | 0 |
 | 41 | [Software Factories for Real Engineers part2](./41-BV1hhsF6EEAm-Software-Factories-for-Real-Engineers-part2/) | 5 | 2 | 0 |
 | 42 | [Building Distributed Applications That Work](./42-BV1qUWg6XE5z-Building-Distributed-Applications-That-Work/) | - | 5 | 46 |
+| 46 | [AI Security Bootcamp part1](./46-BV1PSGA6SEKx-AI-Security-Bootcamp-part1/) | - | 1 | 10 |
