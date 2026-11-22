@@ -52,3 +52,5 @@
 | 49 | [Vector Databases Fundamentals to Production](./49-BV1rmEL6cEmF-Vector-Databases-Fundamentals-to-Production/) | - | 1 | 9 |
 | 51 | [Context Engineering Masterclass LLMs RAG Agen](./51-BV1Vc8X6EEMj-Context-Engineering-Masterclass-LLMs-RAG-Agen/) | - | 3 | 23 |
 | 44 | [Agentic AI System Design Agent](./44-BV1ntMt6TEe4-Agentic-AI-System-Design-Agent/) | - | 2 | 10 |
+| 43 | [Breaking LLMs LLM](./43-BV1NEHG6NELT-Breaking-LLMs-LLM/) | - | 1 | 8 |
+| 48 | [AI Security Bootcamp part3](./48-BV1PSGA6SEaa-AI-Security-Bootcamp-part3/) | - | 2 | 30 |
