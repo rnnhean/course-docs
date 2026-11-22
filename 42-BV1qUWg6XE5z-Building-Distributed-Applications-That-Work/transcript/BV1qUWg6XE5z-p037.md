@@ -1,0 +1,3 @@
+[00:00] Summary Popular AI applications used for conversations, such as chat GPT, rely on LLM technology. Olama allows anyone to host LLMs anywhere, free of charge. It can run in Docker containers and can host a wide range of LLMs, including Meta's Lama. Aspire has a community toolkit for hosting Olama. The Olama community toolkit for Aspire comes with its own front-end.
+[00:27] which is similar to ChatGPT and serves the same purpose. Symantec Kernel is a Microsoft framework for building AI agents that allows any .NET code to interact with LLMs. It can stream the LLM response letter by letter. The official name for the LLM functionality used in chats is ChatCompletion. You can use SignalR to build a custom chat interface that supports answer streaming.
+[00:55] you

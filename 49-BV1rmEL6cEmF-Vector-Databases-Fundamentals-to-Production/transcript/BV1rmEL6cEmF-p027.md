@@ -1,0 +1,3 @@
+[00:00] So in this section, we went through the process of actually building vector databases through hands-on. So we started by setting up development environment, VS Code, Python and OpenAI API key and everything. And we look at Chroma database workflow overview. So how Chroma in the backend works, all the pieces, all the building blocks. We looked at creating a Chroma database. Actually, we did this.
+[00:28] and we use default embedding function and then we use OpenAI embeddings to create our embeddings. We look into vector database metrics and then of course we look at vector database metrics as an overview. So we learned a lot and I'll see you next.
+[00:46] Thank you.

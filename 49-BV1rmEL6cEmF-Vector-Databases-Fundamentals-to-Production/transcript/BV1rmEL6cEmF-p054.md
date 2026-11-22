@@ -1,0 +1,5 @@
+[00:00] So, we've done a lot of things. I remember we talked about those top five vector databases, PyCon, Milvus, Phase, Weavit, and Chroma. And what I want you to do now is a challenge. We're not going to go through all of these, but I...
+[00:14] Touch on the main ones in this case chroma which is one of the popular one especially for developers because it really shows you how things actually work. Okay, and then I added this cloud based This cloud base vector base pine cone to the mix so that we have at least two different kinds of
+[00:36] databases, vector databases, although they do pretty much the same thing as you see. Some small differences here and there, but the base of everything is still the same. So the challenge for you is to explore the other vectors databases that we didn't touch on, such as face, you can go and explore Milvus, which is going to be pretty similar to Pinecone, with it as well.
+[01:01] So go ahead and do that and explore those as a challenge for you so you can see which one you like to work with and go from there.
+[01:10] Thank you.

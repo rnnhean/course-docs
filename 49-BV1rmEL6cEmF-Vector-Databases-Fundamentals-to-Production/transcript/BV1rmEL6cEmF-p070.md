@@ -1,0 +1,5 @@
+[00:00] Okay, to wrap up, we talked about HNSW and IVF flat. Internally, it's all about this hierarchical graph navigation. We have sparse top and dense bottom layers. This is good for fast queries, high accuracy, and handles updates well and also uses a lot more memory. For IVF flat, we
+[00:26] know that it's all about clusters, which means we have cluster and probe method that happens. So cluster vectors are generated at build time with that centroid we talked about. This has lower memory footprint, but also has faster index builds. So it needs rebuilding when data changes. So that is the tradeoff.
+[00:49] Now, we also look at quick decision metrics here. So if you have less than 10,000 vectors, then you don't need indexing. Just go straight what you've been doing, that's fine. And the HNSW is usually the default indexing to be used. And when memory is tight, go for IVF flat. Most importantly, always test with your data because as you may or may not know,
+[01:18] benchmarks can be deceiving. Okay, I'll see you in the next video.
+[01:24] you

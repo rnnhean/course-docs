@@ -1,0 +1,3 @@
+[00:00] Summary You can upgrade Aspire from versions 8 and 9 to the Evergreen version 13 manually by updating the SDK and packages or via the Aspire CLI tool. Aspirification is the process of adding non-aspire applications to Aspire. Aspirification is done by adding the Aspire host and service defaults and then integrating both projects with the existing projects. The service defaults package doesn't have to be added to the Aspirified system.
+[00:29] but it helps because it comes with health checks and metrics. The existing connection strings can be left intact for a spirified applications so they still work with the existing production resources. Aspire can integrate with AI-based coding assistance via MCP and tool calling.
+[00:49] you

@@ -1,0 +1,3 @@
+[00:00] Part two, real-time features in AI, making apps interactive. Distributed apps aren't just about more services, they're also about better experiences. In this part, you'll use Aspire as the backbone for features that depend on tight feedback loops, real-time updates, and AI-powered interactions. First, you'll add live order tracking with SignalR so users can see state changes as they happen. Then you'll build something more ambitious.
+[00:27] a chat GPT style app that runs locally with open models using Olama and integrates intelligence into your application using semantic kernel. The goal isn't AI for the sake of AI, it's learning the patterns that make these systems reliable, debuggable, and easy to evolve.
+[00:46] you

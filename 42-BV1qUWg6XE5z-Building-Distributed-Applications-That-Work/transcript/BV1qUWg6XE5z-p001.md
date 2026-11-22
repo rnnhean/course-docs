@@ -1,0 +1,3 @@
+[00:00] Part 1. From zero to running, Aspire Fundamentals. Aspire is at its best when it shortens the distance between it builds and it runs. In this part, you'll learn the core ideas that make that possible. How Aspire models a distributed application, how it wires projects together,
+[00:25] and how it turns dependencies into first-class resources you can run locally with confidence. We'll start with the simplest possible setup and then add realism, containers, integrations, and the kinds of infrastructure every serious app needs. By the end of part one, you'll have a working mental model of Aspire's building blocks and enough hands-on familiarity to confidently asperify a solution without guessing.
+[00:50] you

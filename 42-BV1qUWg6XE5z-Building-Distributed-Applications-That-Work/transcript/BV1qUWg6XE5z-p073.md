@@ -1,0 +1,3 @@
+[00:00] Section A.2 Installing Aspire Project Templates After installing all the required development tools, you can set up Aspire. If you're using Visual Studio 2026 or JetBrains Rider, the Aspire SDK should already be installed, and you'll be able to use it right away. If you prefer to use a simple code editor, such as Visual Studio Code, you have to install the appropriate project templates via the .NET command line interface, CLI. To do so,
+[00:29] Execute the following command. See this command. To verify that the Aspire project templates have been installed, execute the following command. See this command. If the installation worked successfully, some items that contain Aspire in the name should be listed.
+[00:55] you

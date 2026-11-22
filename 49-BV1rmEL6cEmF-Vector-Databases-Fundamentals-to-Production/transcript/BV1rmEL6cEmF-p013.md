@@ -1,0 +1,2 @@
+[00:00] So in this section, we talked about traditional versus a vector databases, particularly, we talked about limitations and contrasts between those two. And we also talked about vector databases and embeddings. So an overview, the differences, what are embeddings, what are vector databases and looking at how both of them work. And then we talked about vector databases and embeddings, a full overview and how vector database work and its advantages.
+[00:29] and also talk about vector databases use cases.

@@ -1,0 +1,3 @@
+[00:00] Part 3 – Professional Great Aspire Applications When the happy path works, the real work begins, proving that the system behaves under load, failure, change, and time. This part is about taking what you've built and making it resilient, observable, and safe. You'll learn how to test distributed systems without turning your test suite into a fragile collection of scripts, how to monitor services so you can see what's happening across boundaries,
+[00:29] and how to use messaging and caching in ways that improve performance without sacrificing correctness. Finally, you'll tackle security, not as a checklist, but as a set of practical decisions that affect configuration, service to service communication, secrets, and deployment.
+[00:47] you
