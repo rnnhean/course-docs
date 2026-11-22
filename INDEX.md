@@ -54,3 +54,4 @@
 | 44 | [Agentic AI System Design Agent](./44-BV1ntMt6TEe4-Agentic-AI-System-Design-Agent/) | - | 2 | 10 |
 | 43 | [Breaking LLMs LLM](./43-BV1NEHG6NELT-Breaking-LLMs-LLM/) | - | 1 | 8 |
 | 48 | [AI Security Bootcamp part3](./48-BV1PSGA6SEaa-AI-Security-Bootcamp-part3/) | - | 2 | 30 |
+| 47 | [AI Security Bootcamp part2](./47-BV1PSGA6SETb-AI-Security-Bootcamp-part2/) | - | 4 | 50 |
