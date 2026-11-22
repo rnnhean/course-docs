@@ -51,3 +51,4 @@
 | 45 | [AI Evals For Engineers PMs Agent](./45-BV1FwTE6gEky-AI-Evals-For-Engineers-PMs-Agent/) | - | 3 | 26 |
 | 49 | [Vector Databases Fundamentals to Production](./49-BV1rmEL6cEmF-Vector-Databases-Fundamentals-to-Production/) | - | 1 | 9 |
 | 51 | [Context Engineering Masterclass LLMs RAG Agen](./51-BV1Vc8X6EEMj-Context-Engineering-Masterclass-LLMs-RAG-Agen/) | - | 3 | 23 |
+| 44 | [Agentic AI System Design Agent](./44-BV1ntMt6TEe4-Agentic-AI-System-Design-Agent/) | - | 2 | 10 |
