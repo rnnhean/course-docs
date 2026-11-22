@@ -48,3 +48,6 @@
 | 42 | [Building Distributed Applications That Work](./42-BV1qUWg6XE5z-Building-Distributed-Applications-That-Work/) | - | 5 | 46 |
 | 46 | [AI Security Bootcamp part1](./46-BV1PSGA6SEKx-AI-Security-Bootcamp-part1/) | - | 1 | 10 |
 | 50 | [Claude MCP Masterclass MCP](./50-BV1SZgy6qEPh-Claude-MCP-Masterclass-MCP/) | - | 1 | 13 |
+| 45 | [AI Evals For Engineers PMs Agent](./45-BV1FwTE6gEky-AI-Evals-For-Engineers-PMs-Agent/) | - | 3 | 26 |
+| 49 | [Vector Databases Fundamentals to Production](./49-BV1rmEL6cEmF-Vector-Databases-Fundamentals-to-Production/) | - | 1 | 9 |
+| 51 | [Context Engineering Masterclass LLMs RAG Agen](./51-BV1Vc8X6EEMj-Context-Engineering-Masterclass-LLMs-RAG-Agen/) | - | 3 | 23 |
